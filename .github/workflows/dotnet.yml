@@ -24,8 +24,8 @@ jobs:
       run: dotnet build --no-restore
     - name: rund
       run: dotnet run
-    - name: Upload artifact for deployment job
-      uses: actions/upload-artifact@v3
+      
+    - name: Deploy to GitHub Pages 
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
-          name: .net-app
-          path: output
+        FOLDER: output
