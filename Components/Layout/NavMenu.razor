@@ -1,0 +1,44 @@
+﻿<header class="fixed z-30 w-full bg-white shadow-lg backdrop-blur-sm transition duration-300 ease-in-out md:bg-opacity-90">
+    <div class="mx-auto max-w-6xl px-5 sm:px-6">
+        <div class="flex h-16 items-center justify-between md:h-20">
+            <div class="mr-4 shrink-0">
+                <a class="block" href="/">
+                    <svg class="h-8 w-8" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <radialGradient cx="21.152%" cy="86.063%" fx="21.152%" fy="86.063%" r="79.941%" id="footer-logo">
+                                <stop stop-color="#4FD1C5" offset="0%"></stop>
+                                <stop stop-color="#81E6D9" offset="25.871%"></stop>
+                                <stop stop-color="#338CF5" offset="100%"></stop>
+                            </radialGradient>
+                        </defs>
+                        <rect width="32" height="32" rx="16" fill="url(#footer-logo)" fill-rule="nonzero"></rect>
+                    </svg>
+                </a>
+            </div>
+            <nav class="hidden md:flex md:grow">
+                <ul class="flex grow flex-wrap items-center justify-end">
+                    <li>
+                        <NavLink Match="NavLinkMatch.All" href="" ActiveClass="font-semibold underline" class="flex items-center px-5 py-3 font-medium text-gray-600 transition duration-150 ease-in-out hover:text-gray-900">Home</NavLink>
+                    </li>
+                    <li>
+                        <NavLink href="socha1" ActiveClass="font-semibold underline" class="flex items-center px-5 py-3 font-medium text-gray-600 transition duration-150 ease-in-out hover:text-gray-900">Item1</NavLink>
+                    </li>
+                    <li>
+                        <NavLink href="socha2" ActiveClass="font-semibold underline" class="flex items-center px-5 py-3 font-medium text-gray-600 transition duration-150 ease-in-out hover:text-gray-900">Item2</NavLink>
+                    </li>
+                </ul>
+            </nav>
+            <div class="flex md:hidden">
+                <button class="hamburger false" aria-controls="mobile-nav" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                    <svg class="h-6 w-6 fill-current text-gray-900" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="4" width="24" height="2"></rect>
+                        <rect y="11" width="24" height="2"></rect>
+                        <rect y="18" width="24" height="2"></rect>
+                    </svg>
+                </button>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</header>
