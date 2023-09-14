@@ -28,4 +28,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
           name: .net-app
-          path: ${{env.DOTNET_ROOT}}/output
+          path: output
