@@ -3,6 +3,7 @@
 bin/
 obj/
 /.idea
+/output
 # Common node modules locations
 /node_modules
 /wwwroot/node_modules
