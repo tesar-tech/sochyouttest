@@ -59,29 +59,7 @@ if (isStatic)
 
 app.Run();
 
-var searchPattern = "*.html";
-var regexPattern = $"""<base\s+href=".*"\s*>""";
-var newBase = "/SochyOutTest/";
-string newBaseTag = $"""<base href="{newBase}">""";
 
-// Get all .html files from the directory
-var files = Directory.GetFiles(outputPath, searchPattern, SearchOption.AllDirectories);
-
-foreach (var file in files)
-{
-    // Read file content
-    var content = File.ReadAllText(file);
-
-    // Replace base tag using regex
-    if (Regex.IsMatch(content, regexPattern))
-    {
-        content = Regex.Replace(content, regexPattern, newBaseTag);
-        File.WriteAllText(file, content);
-        Console.WriteLine($"Updated: {file}");
-    }
-}
-
-CopyDirectory("wwwroot", outputPath);
 
 void CopyDirectory(string sourcePath, string destPath)
 {
